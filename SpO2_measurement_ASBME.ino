@@ -75,10 +75,7 @@ void loop()
       
       Serial.print(F("red="));
       Serial.print(redBuffer[i], DEC);
-      Serial.print(F(", ir="));
-      Serial.print(irBuffer[i], DEC);
-
-      // fill in the rest to print heart rate and oxygen readings! 
+      // fill in the rest to print ir, heart rate, and oxygen readings! 
 
       
     }
