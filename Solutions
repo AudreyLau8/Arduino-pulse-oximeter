@@ -80,9 +80,6 @@ void setup()
    while (1);
  }
 
-
-// Serial.println(F("Attach sensor to finger with rubber band. Press any key to start conversion"));
-// while (Serial.available() == 0) ; //wait until user presses a key
  Serial.read();
 
 
