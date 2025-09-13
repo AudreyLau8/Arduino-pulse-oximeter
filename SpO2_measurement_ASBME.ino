@@ -25,7 +25,7 @@ byte readLED = 13; //Blinks with each data read
 
 void setup()
 {
-  // HERE initialize serial communication at 9600 bits per second:
+// <-------   HERE initialize serial communication at 9600 bits per second:  ---------->
 
   pinMode(pulseLED, OUTPUT);
   pinMode(readLED, OUTPUT);
@@ -69,14 +69,14 @@ void loop()
 
       digitalWrite(readLED, !digitalRead(readLED)); //Blink onboard LED with every data read
 
-      // HERE store the rest of the red and ir values
+// <---------   HERE store the rest of the red and ir values   ------------>
       
       particleSensor.nextSample();
 
       
       Serial.print(F("red="));
       Serial.print(redBuffer[i], DEC);
-      // HERE fill in the rest to print ir, heart rate, and oxygen readings! 
+// <----------  HERE fill in the rest to print ir, heart rate, and oxygen readings!  -------->
 
       
     }
